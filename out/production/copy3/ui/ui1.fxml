@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="337.0" prefWidth="592.0">
+         <tabs>
+            <Tab text="Teacher">
+               <content>
+                  <HBox prefHeight="339.0" prefWidth="621.0">
+                     <children>
+                        <TableView fx:id="teacherTableView" prefHeight="308.0" prefWidth="311.0">
+                          <columns>
+                              <TableColumn fx:id="idTeacher" prefWidth="57.33334481716156" text="Id" />
+                              <TableColumn fx:id="nameTeacher" prefWidth="139.33331680297852" text="Name" />
+                              <TableColumn fx:id="rankTeacher" prefWidth="96.66667175292969" text="Rank" />
+                          </columns>
+                        </TableView>
+                        <VBox prefHeight="308.0" prefWidth="73.0" />
+                        <VBox prefHeight="308.0" prefWidth="217.0">
+                           <children>
+                              <Label />
+                              <Label text="Id" />
+                              <TextField fx:id="idTeacherText" />
+                              <Label text="Name" />
+                              <TextField fx:id="nameTeacherText" />
+                              <Label text="Rank" />
+                              <TextField fx:id="rankTeacherText" />
+                              <Button fx:id="addTeacherButton" mnemonicParsing="false" onAction="#addTeacherButtonHandler" text="Add" />
+                              <Button fx:id="deleteTeacherButton" mnemonicParsing="false" onAction="#deleteTeacherButtonHandler" text="Delete" />
+                              <Button fx:id="updateTeacherButton" mnemonicParsing="false" onAction="#updateTeacherButtonHandler" text="Update" />
+                              <Label text="Old Id" />
+                              <TextField fx:id="oldIdTeacherText" prefHeight="21.0" prefWidth="100.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="Discipline">
+               <content>
+                  <HBox prefHeight="305.0" prefWidth="592.0">
+                     <children>
+                        <TableView fx:id="disciplineTableView" prefHeight="308.0" prefWidth="257.0">
+                           <columns>
+                              <TableColumn fx:id="idDiscipline" prefWidth="112.0000279545784" text="Id" />
+                              <TableColumn fx:id="nameDiscipline" prefWidth="144.00001271565753" text="Name" />
+                           </columns>
+                        </TableView>
+                        <VBox prefHeight="308.0" prefWidth="106.0" />
+                        <VBox prefHeight="308.0" prefWidth="229.0">
+                           <children>
+                              <Label />
+                              <Label text="Id" />
+                              <TextField fx:id="idDisciplineText" />
+                              <Label text="Name" />
+                              <TextField fx:id="nameDisciplineText" />
+                              <Button fx:id="addDisciplineButton" mnemonicParsing="false" onAction="#addDisciplineButtonHandler" text="Add" />
+                              <Button fx:id="deleteDisciplineButton" mnemonicParsing="false" onAction="#deleteDisciplineButtonHandler" text="Delete" />
+                              <Button fx:id="updateDisciplineButton" mnemonicParsing="false" onAction="#updateDisciplineButtonHandler" text="Update" />
+                              <Label text="Old Id" />
+                              <TextField fx:id="oldIdDisciplineText" prefHeight="21.0" prefWidth="100.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="Activity">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="579.0">
+                     <children>
+                        <VBox layoutX="391.0" layoutY="12.0" prefHeight="283.0" prefWidth="216.0">
+                           <children>
+                              <Label text="Id" />
+                              <TextField fx:id="activityIdTextField" prefHeight="25.0" prefWidth="202.0" />
+                              <Label text="Type" />
+                              <TextField fx:id="typeTextField" />
+                              <Label />
+                              <Button mnemonicParsing="false" onAction="#addActivityButtonHandler" text="Add activity" />
+                           </children>
+                        </VBox>
+                        <ListView fx:id="activitiesListView" layoutX="13.0" layoutY="14.0" prefHeight="285.0" prefWidth="371.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Subject">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="555.0">
+                     <children>
+                        <TableView fx:id="timeslotTableView" layoutY="4.0" prefHeight="305.0" prefWidth="157.0">
+                          <columns>
+                            <TableColumn fx:id="day" prefWidth="75.0" text="Day" />
+                            <TableColumn fx:id="start" prefWidth="39.33331298828125" text="Start" />
+                              <TableColumn fx:id="end" prefWidth="39.33336639404297" text="End" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="subgroupTableView" layoutX="157.0" layoutY="3.0" prefHeight="308.0" prefWidth="97.0">
+                          <columns>
+                            <TableColumn fx:id="name" prefWidth="93.3333740234375" text="Subgroups" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="190.0" layoutY="5.0" />
+                        <Button fx:id="associateButton" layoutX="451.0" layoutY="260.0" mnemonicParsing="false" onAction="#associateButtonHandler" text="Associate" />
+                        <Label layoutX="451.0" layoutY="210.0" text="Id" />
+                        <TextField fx:id="idSubjectText" layoutX="451.0" layoutY="227.0" prefHeight="25.0" prefWidth="66.0" />
+                        <ListView fx:id="activityListView" layoutX="254.0" layoutY="25.0" prefHeight="281.0" prefWidth="190.0" />
+                        <ListView fx:id="roomListView" layoutX="445.0" layoutY="25.0" prefHeight="185.0" prefWidth="155.0" />
+                        <Label layoutX="254.0" layoutY="5.0" text="Activity" />
+                        <Label layoutX="446.0" layoutY="5.0" text="Room" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Associations">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="associationsListView" layoutX="14.0" layoutY="21.0" prefHeight="274.0" prefWidth="591.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Streams">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="streamsListView" layoutX="14.0" layoutY="17.0" prefHeight="273.0" prefWidth="288.0" />
+                        <TextField fx:id="rankTextField" layoutX="313.0" layoutY="52.0" />
+                        <TextField fx:id="roomIdTextField" layoutX="313.0" layoutY="141.0" />
+                        <TextField fx:id="formationTextField" layoutX="313.0" layoutY="230.0" />
+                        <Label layoutX="313.0" layoutY="25.0" text="Rank" />
+                        <Label layoutX="312.0" layoutY="111.0" text="Room id" />
+                        <Label layoutX="312.0" layoutY="203.0" text="Formation" />
+                        <Button layoutX="498.0" layoutY="52.0" mnemonicParsing="false" onAction="#sortTeachersButtonHandler" text="Teachers" />
+                        <Button layoutX="504.0" layoutY="141.0" mnemonicParsing="false" onAction="#sortActivitiesButtonHandler" text="Activities" />
+                        <Button layoutX="504.0" layoutY="230.0" mnemonicParsing="false" onAction="#timetableButtonHandler" text="Timetable" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Timetable">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="25.0" layoutY="15.0" prefHeight="308.0" prefWidth="101.0">
+                           <children>
+                              <Label text="Group" />
+                              <Label />
+                              <ListView fx:id="groupListView" prefHeight="200.0" prefWidth="49.0" />
+                              <Label />
+                              <Button mnemonicParsing="false" onAction="#showTimetableButtonHandler" text="Show" />
+                           </children>
+                        </VBox>
+                        <Label fx:id="groupLabel" layoutX="345.0" layoutY="6.0" text="Group" />
+                        <HBox layoutX="144.0" layoutY="42.0" prefHeight="253.0" prefWidth="479.0">
+                           <children>
+                              <ListView fx:id="TTdayListView" prefHeight="253.0" prefWidth="77.0" />
+                              <ListView fx:id="TTintervalListView" prefHeight="265.0" prefWidth="54.0" />
+                              <ListView fx:id="TTsubjectListView" prefHeight="253.0" prefWidth="115.0" />
+                              <ListView fx:id="TTtypeListView" prefHeight="265.0" prefWidth="67.0" />
+                              <ListView fx:id="TTteacherListView" prefHeight="253.0" prefWidth="103.0" />
+                              <ListView fx:id="TTroomListView" prefHeight="253.0" prefWidth="48.0" />
+                           </children>
+                        </HBox>
+                        <Label layoutX="156.0" layoutY="23.0" text="Day" />
+                        <Label layoutX="226.0" layoutY="23.0" text="Interval" />
+                        <Label layoutX="281.0" layoutY="23.0" text="Subject" />
+                        <Label layoutX="385.0" layoutY="23.0" text="Type" />
+                        <Label layoutX="450.0" layoutY="23.0" text="Teacher" />
+                        <Label layoutX="562.0" layoutY="23.0" text="Room" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</VBox>

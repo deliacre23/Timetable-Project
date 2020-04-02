@@ -1,0 +1,5 @@
+Lab|ASC|Apatean Anca
+Seminar|MAP|Bocicor Iuliana
+Lecture|ASC|Vancea Alexandru
+Lab|Databases|Pop Emilia
+Lecture|Criptography|Septimiu Crivei

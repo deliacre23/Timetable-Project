@@ -1,0 +1,5 @@
+1|Lab|1|1
+2|Seminar|2|2
+3|Lecture|3|5
+4|Lab|4|3
+5|Lecture|5|4

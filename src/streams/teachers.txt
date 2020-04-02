@@ -1,0 +1,5 @@
+1|Apatean Anca|Associate professor
+2|Bocicor Iuliana|Lecturer
+3|Vancea Alexandru|Lecturer
+4|Pop Emilia|Doctorand
+5|Septimiu Crivei|Professor

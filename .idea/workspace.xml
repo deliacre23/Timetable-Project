@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4413d62e-0cfa-42e5-96ea-dcf6986daa8d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Tb14wihY5mcq3DV4jWJAT9dGA7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\delia\IdeaProjects\copy3\src\main" />
+      <recent name="C:\Users\delia\IdeaProjects\copy3\src" />
+      <recent name="C:\Users\delia\IdeaProjects\copy3\src\UI" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\delia\IdeaProjects\copy3\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main">
+    <configuration name="DbRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="repository.DbRepository" />
+      <module name="copy3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.main" />
+      <module name="copy3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DisciplineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="copy3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.DisciplineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DbRepository" />
+        <item itemvalue="JUnit.DisciplineTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4413d62e-0cfa-42e5-96ea-dcf6986daa8d" name="Default Changelist" comment="" />
+      <created>1573713793909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573713793909</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1237" height="86" key="GridCell.Tab.0.bottom" timestamp="1585838776076">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="86" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585838776076" />
+    <state width="1237" height="86" key="GridCell.Tab.0.center" timestamp="1585838776076">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="86" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585838776076" />
+    <state width="1237" height="86" key="GridCell.Tab.0.left" timestamp="1585838776076">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="86" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585838776076" />
+    <state width="1237" height="86" key="GridCell.Tab.0.right" timestamp="1585838776076">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="86" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585838776076" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/module-info.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
